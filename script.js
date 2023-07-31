@@ -1,6 +1,5 @@
 let menu = document.querySelector("#menu-btn");
 let header = document.querySelector(".header");
-
 menu.onclick = () => {
     menu.classList.toggle("fa-times");
     header.classList.toggle("active");
@@ -20,3 +19,19 @@ themeToggler.onclick = () => {
         document.body.classList.remove("active")
     }
 }
+
+let allAncherTag = document.querySelectorAll(".navbar a")
+allAncherTag.forEach(function(elem){
+    elem.addEventListener("click",function(){
+
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                    header.classList.toggle("active");
+            }
+          }
+          var x = window.matchMedia("(max-width: 991px)")
+          myFunction(x) // Call listener function at run time
+          x.addEventListener('change',myFunction) // Attach listener function on state changes
+    })
+})
+  
