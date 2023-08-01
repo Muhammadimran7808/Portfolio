@@ -21,7 +21,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.18s linear;
+    /* transition: 0.18s linear; */
 }
 
 html {
@@ -416,6 +416,7 @@ section {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    image-rendering: optimizeSpeed;
 }
 .portfolio .box-container .box .content{
     position: absolute;
@@ -443,11 +444,48 @@ section {
     transform: translateY(0rem);
     opacity: 1;
 }
-
-
 /* Portfolio section ends */
 
+/* contact us section starts */
+.contact form{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
 
+.contact form .box{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem
+}
+.contact form .box:focus{
+    box-shadow: var(--box-shadow-inset);
+}
+.contact form textarea{
+    height: 20rem;
+    resize: none; 
+}
+/* contact us section ends */
+
+.credits{
+    font-size: 2rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    color: var(--black);
+}
+.credits span{
+    color: var(--green);
+}
 
 
 
@@ -505,4 +543,21 @@ section {
         height: 32rem;
     }
 
+}
+
+@media (max-height: 400px) and (min-width:600px){
+    .header{
+        display: flex;
+        align-items:start;
+        justify-content: space-around;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .navbar a{
+        width: 30rem;
+    }
+    .about{
+        margin-top: 5rem;
+    }
 }
