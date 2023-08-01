@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
 
     <!-- Font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Locomotive css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header section starts -->
     <header class="header">
@@ -31,184 +35,196 @@
 
     <!-- Theme toggle-->
     <div id="theme-toggler" class="fas fa-moon"></div>
+    <div id="main">
+        <!-- Home section starts -->
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Muhammad Imran</h3>
+                <p>I am a mern stack website developer</p>
+                <a href="images/my_resume.png" download="my_resume" class="btn">Download CV</a>
+            </div>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100052821680235&mibextid=ZbWKwL" target="_blank"
+                    class="fab fa-facebook-f"></a>
+                <a href="https://github.com/Muhammadimran7808" target="_blank" class="fab fa-github"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="https://wa.me/+923014717812" target="_blank" class="fab fa-whatsapp"></a>
+            </div>
+        </section>
+        <!-- Home section ends -->
 
-    <!-- Home section starts -->
-    <section class="home" id="home">
-        <div class="content">
-            <h3>Muhammad Imran</h3>
-            <p>I am a mern stack website developer</p>
-            <a href="images/my_resume.png" download="my_resume" class="btn">Download CV</a>
-        </div>
-        <div class="share">
-            <a href="https://www.facebook.com/profile.php?id=100052821680235&mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f"></a>
-            <a href="https://github.com/Muhammadimran7808" target="_blank" class="fab fa-github"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-        </div>
-    </section>
-    <!-- Home section ends -->
 
+        <!-- About section starts -->
+        <section class="about" id="about">
+            <h1 class="heading"><span>about</span> me </h1>
 
-    <!-- About section starts -->
-    <section class="about" id="about">
-        <h1 class="heading"><span>about</span> me </h1>
+            <div class="row">
+                <div class="box-container">
+                    <div class="box">
+                        <h3>2+</h3>
+                        <p>year of experience</p>
+                    </div>
+                    <div class="box">
+                        <h3>450+</h3>
+                        <p>satisfied clients</p>
+                    </div>
+                    <div class="box">
+                        <h3>190+</h3>
+                        <p>working hours</p>
+                    </div>
+                    <div class="box">
+                        <h3>10+</h3>
+                        <p>awards won</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>my name is <span>muhammad imran</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis impedit magni, cupiditate
+                        reiciendis similique at velit tempore necessitatibus commodi ipsa.</p>
+                    <a href="#contact" class="btn">contact me</a>
+                </div>
+            </div>
 
-        <div class="row">
+            <div class="row">
+                <div class="progress">
+                    <h3>web design <span>90%</span></h3>
+                    <div class="bar bar-1-1"><span></span></div>
+                    <h3>graphic design <span>75%</span></h3>
+                    <div class="bar bar-1-2"><span></span></div>
+                    <h3>UI/UX design <span>80%</span></h3>
+                    <div class="bar bar-1-3"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>HTML <span>95%</span></h3>
+                    <div class="bar bar-2-1"><span></span></div>
+                    <h3>CSS <span>80%</span></h3>
+                    <div class="bar bar-2-2"><span></span></div>
+                    <h3>javascript <span>65%</span></h3>
+                    <div class="bar bar-3-3"><span></span></div>
+                </div>
+            </div>
+        </section>
+        <!-- About section ends -->
+
+        <!-- Services section srarts -->
+        <section class="services" id="services">
+            <h1 class="heading">my <span>services</span></h1>
+
             <div class="box-container">
                 <div class="box">
-                    <h3>2+</h3>
-                    <p>year of experience</p>
+                    <i class="fas fa-code"></i>
+                    <h3>website design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem
+                        aliquid.</p>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>graphic design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad
+                            autem aliquid.</p>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-mobile"></i>
+                        <h3>responsive design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad
+                            autem aliquid.</p>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>digital markiting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad
+                            autem aliquid.</p>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fas fa-search-dollar"></i>
+                        <h3>SEO markiting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad
+                            autem aliquid.</p>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <div class="box">
+                        <i class="fab fa-wordpress"></i>
+                        <h3>wordpress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad
+                            autem aliquid.</p>
+                    </div>
+                </div>
+        </section>
+        <!-- Services section ends -->
+
+        <!-- Portfolio section starts -->
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading">my <span>portfolio</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/img1.jpg" alt="">
+                    <div class="content">
+                        <h3>project 01</h3>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>450+</h3>
-                    <p>satisfied clients</p>
+                    <img src="images/img2.webp" alt="">
+                    <div class="content">
+                        <h3>project 02</h3>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>190+</h3>
-                    <p>working hours</p>
+                    <img src="images/img3.jpg" alt="">
+                    <div class="content">
+                        <h3>project 03</h3>
+                    </div>
                 </div>
                 <div class="box">
-                    <h3>10+</h3>
-                    <p>awards won</p>
+                    <img src="images/img4.jpeg" alt="">
+                    <div class="content">
+                        <h3>project 04</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/img5.jpg" alt="">
+                    <div class="content">
+                        <h3>project 05</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/img6.jpg" alt="">
+                    <div class="content">
+                        <h3>project 05</h3>
+                    </div>
                 </div>
             </div>
-            <div class="content">
-                <h3>my name is <span>muhammad imran</span></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis impedit magni, cupiditate reiciendis similique at velit tempore necessitatibus commodi ipsa.</p>
-                <a href="#contact" class="btn">contact me</a>
-            </div>
-        </div>
+        </section>
+        <!-- Portfolio section ends -->
 
-        <div class="row">
-            <div class="progress">
-                <h3>web design <span>90%</span></h3>
-                <div class="bar bar-1-1"><span></span></div>
-                <h3>graphic design <span>75%</span></h3>
-                <div class="bar bar-1-2"><span></span></div>
-                <h3>UI/UX design <span>80%</span></h3>
-                <div class="bar bar-1-3"><span></span></div>
-            </div>
-            <div class="progress">
-                <h3>HTML <span>95%</span></h3>
-                <div class="bar bar-2-1"><span></span></div>
-                <h3>CSS <span>80%</span></h3>
-                <div class="bar bar-2-2"><span></span></div>
-                <h3>javascript <span>65%</span></h3>
-                <div class="bar bar-3-3"><span></span></div>
-            </div>
-        </div>
-    </section>
-    <!-- About section ends -->
+        <!-- Contact us section starts -->
+        <section class="contact" id="contact">
+            <h1 class="heading"><span>contact </span>us</h1>
 
-    <!-- Services section srarts -->
-    <section class="services" id="services">
-        <h1 class="heading">my <span>services</span></h1>
-        
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-code"></i>
-                <h3>website design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-paint-brush"></i>
-                <h3>graphic design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-mobile"></i>
-                <h3>responsive design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-bullhorn"></i>
-                <h3>digital markiting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <i class="fas fa-search-dollar"></i>
-                <h3>SEO markiting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        </div>
-        <div class="box-container">
-            <div class="box">
-                <i class="fab fa-wordpress"></i>
-                <h3>wordpress</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate. Vel iusto ad autem aliquid.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Services section ends -->
+            <form action="">
+                <input type="text" required placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="text" placeholder="subject" class="box">
+                <textarea name="" placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+        </section>
+        <!-- Contact us section ends -->
 
-    <!-- Portfolio section starts -->
-    <section class="portfolio" id="portfolio">
-        <h1 class="heading">my <span>portfolio</span></h1>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="images/img1.jpg" alt="" >
-                <div class="content">
-                    <h3>project 01</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/img2.webp" alt="">
-                <div class="content">
-                    <h3>project 02</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/img3.jpg" alt="">
-                <div class="content">
-                    <h3>project 03</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/img4.jpeg" alt="">
-                <div class="content">
-                    <h3>project 04</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/img5.jpg" alt="" >
-                <div class="content">
-                    <h3>project 05</h3>
-                </div>
-            </div>
-            <div class="box">
-                <img src="images/img6.jpg" alt="" >
-                <div class="content">
-                    <h3>project 05</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio section ends -->
-
-    <!-- Contact us section starts -->
-    <section class="contact" id="contact">
-        <h1 class="heading"><span>contact </span>us</h1>
-
-        <form action="">
-            <input type="text" required placeholder="your name" class="box">
-            <input type="email" placeholder="your email" class="box">
-            <input type="text" placeholder="subject" class="box">
-            <textarea name="" placeholder="your message" class="box" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn">
-        </form>
-    </section>
-    <!-- Contact us section ends -->
-
-    <div class="credits">created by <span>muhammad imran</span> | all rights reserved</div>
+        <div class="credits">created by <span>muhammad imran</span> | all rights reserved</div>
+    </div>
+    <!-- Locomotive js link-->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
