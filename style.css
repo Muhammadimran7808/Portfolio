@@ -21,7 +21,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    /* transition: 0.18s linear; */
+    transition: 0.18s linear;
 }
 
 html {
