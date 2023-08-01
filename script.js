@@ -27,6 +27,7 @@ allAncherTag.forEach(function(elem){
         function myFunction(x) {
             if (x.matches) { // If media query matches
                     header.classList.toggle("active");
+                    menu.classList.toggle("fa-times");
             }
           }
           var x = window.matchMedia("(max-width: 991px)")
