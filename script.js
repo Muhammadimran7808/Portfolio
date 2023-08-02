@@ -1,9 +1,3 @@
-// Locomotive smooth scrolling code
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
-
 
 let menu = document.querySelector("#menu-btn");
 let header = document.querySelector(".header");
