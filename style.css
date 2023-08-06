@@ -486,12 +486,10 @@ section {
 .credits span{
     color: var(--green);
 }
-
-
-
-
-
-
+.credits .footer-heart{
+    color: red;
+    font-size: 3rem;
+}
 
 
 
