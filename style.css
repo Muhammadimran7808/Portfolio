@@ -5,6 +5,7 @@
     --black: #444;
     --light-color: #777;
     --bg-color: #e6e6e6;
+    --hero-sec-bg-color: linear-gradient(22deg, rgba(230, 230, 230, 1) 0%, rgba(230, 230, 230, 1) 56%, rgba(221, 204, 246, 1) 78%);
     --border: .1rem solid rgba(0, 0, 0, .2);
     --box-shadow: .4rem .4rem 1rem #ccc,
         -.4rem -.4rem 1rem #fff;
@@ -39,7 +40,8 @@ body.active {
     --black: #fff;
     --light-color: #ddd;
     --bg-color: #222;
-    --border: .1rem solid rgba(0, 0, 0, .4);
+    --hero-sec-bg-color: linear-gradient(22deg, rgba(34, 34, 34, 1) 0%, rgba(34, 34, 34, 1) 56%, rgba(45, 25, 63, 1) 78%);
+    --border: .1rem solid #6665656f;
     --box-shadow: .4rem .4rem 1rem #000,
         -.4rem -.4rem 1rem #383838;
     --box-shadow-inset: .4rem .4rem 1rem #000 inset,
@@ -153,19 +155,32 @@ section {
     display: flex;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
+    background: var(--hero-sec-bg-color);
 }
 
-.home .content h3 {
-    font-size: 7rem;
+.hero-container {
+    width: calc(100vw - 30rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.hero-container .hero-image img {
+    height: 36rem;
+}
+
+.hero-container .content h3 {
+    font-size: 4.6rem;
     line-height: 1.1;
     color: var(--black);
     text-transform: uppercase;
 }
 
-.home .content p {
-    font-size: 2rem;
+.hero-container .content p {
+    font-size: 1.8rem;
     line-height: 1.1;
     color: var(--green);
     padding-bottom: .5rem;
@@ -191,8 +206,7 @@ section {
 }
 
 .home .share {
-    position: relative;
-    top: 10rem;
+    margin-top: 6rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 1rem;
@@ -382,7 +396,8 @@ section {
 .services .box-container .box::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: var(--green);
@@ -390,21 +405,25 @@ section {
     clip-path: circle(9rem at 5% 0%);
     transition: .3s linear;
 }
-.services .box-container .box:hover::before{
+
+.services .box-container .box:hover::before {
     clip-path: circle(100%);
 }
-.services .box-container .box:hover > *{
+
+.services .box-container .box:hover>* {
     color: #fff;
 }
+
 /* services section ends */
 
 /* Portfolio section starts */
-.portfolio .box-container{
+.portfolio .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
     gap: 2rem;
 }
-.portfolio .box-container .box{
+
+.portfolio .box-container .box {
     height: 25rem;
     border-radius: .5rem;
     overflow: hidden;
@@ -412,15 +431,18 @@ section {
     position: relative;
     border: 1rem solid transparent;
 }
-.portfolio .box-container .box img{
+
+.portfolio .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     image-rendering: optimizeSpeed;
 }
-.portfolio .box-container .box .content{
+
+.portfolio .box-container .box .content {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     background: var(--bg-color);
@@ -429,10 +451,11 @@ section {
     scale: 0;
 }
 
-.portfolio .box-container .box:hover .content{
+.portfolio .box-container .box:hover .content {
     scale: 1;
 }
-.portfolio .box-container .box .content h3{
+
+.portfolio .box-container .box .content h3 {
     font-size: 2.5rem;
     color: var(--black);
     text-transform: uppercase;
@@ -440,14 +463,16 @@ section {
     opacity: 0;
     transition-delay: .3s;
 }
-.portfolio .box-container .box:hover .content h3{
+
+.portfolio .box-container .box:hover .content h3 {
     transform: translateY(0rem);
     opacity: 1;
 }
+
 /* Portfolio section ends */
 
 /* contact us section starts */
-.contact form{
+.contact form {
     margin: 1rem auto;
     max-width: 70rem;
     border-radius: .5rem;
@@ -455,7 +480,7 @@ section {
     padding: 2rem;
 }
 
-.contact form .box{
+.contact form .box {
     width: 100%;
     padding: 1rem 1.5rem;
     background: none;
@@ -466,16 +491,19 @@ section {
     box-shadow: var(--box-shadow);
     border-radius: .5rem
 }
-.contact form .box:focus{
+
+.contact form .box:focus {
     box-shadow: var(--box-shadow-inset);
 }
-.contact form textarea{
+
+.contact form textarea {
     height: 20rem;
-    resize: none; 
+    resize: none;
 }
+
 /* contact us section ends */
 
-.credits{
+.credits {
     font-size: 2rem;
     text-align: center;
     padding: 2.5rem 1rem;
@@ -483,10 +511,12 @@ section {
     border-top: var(--border);
     color: var(--black);
 }
-.credits span{
+
+.credits span {
     color: var(--green);
 }
-.credits .footer-heart{
+
+.credits .footer-heart {
     color: red;
     font-size: 3rem;
 }
@@ -520,6 +550,27 @@ section {
     #menu-btn {
         display: initial;
     }
+
+    .hero-container .content h3 {
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:800px) and (min-width:700px) {
+    .hero-container .content h3 {
+        white-space: normal;
+    }
+}
+
+@media(max-width:800px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .hero-container .hero-image img {
+        height: 40rem;
+    }
 }
 
 
@@ -533,29 +584,50 @@ section {
         border-right: 0;
     }
 
-    .home .content h3 {
-        font-size: 5.5rem;
+    .hero-container {
+        margin-top: 12rem;
+        flex-direction: column-reverse;
+        gap: 5rem;
     }
 
-    .portfolio .box-container .box{
+    .hero-container .content h3 {
+        font-size: 4.2rem;
+        white-space: nowrap;
+    }
+
+    .portfolio .box-container .box {
         height: 32rem;
+    }
+
+    .contact form input {
+        height: 8rem;
+    }
+
+    .contact form .box {
+        font-size: 2.5rem
+    }
+
+    .contact form textarea {
+        height: 30rem;
     }
 
 }
 
-@media (max-height: 400px) and (min-width:600px){
-    .header{
+@media (max-height: 400px) and (min-width:600px) {
+    .header {
         display: flex;
-        align-items:start;
+        align-items: start;
         justify-content: space-around;
         width: 100%;
         height: 100vh;
         overflow: hidden;
     }
-    .navbar a{
+
+    .navbar a {
         width: 30rem;
     }
-    .about{
+
+    .about {
         margin-top: 5rem;
     }
 }

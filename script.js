@@ -5,9 +5,9 @@ menu.onclick = () => {
     menu.classList.toggle("fa-times");
     header.classList.toggle("active");
 }
-
+  
+// Code for manually change theme
 let themeToggler = document.querySelector("#theme-toggler");
-
 themeToggler.onclick = () => {
     themeToggler.classList.toggle("fa-sun");
     
@@ -20,7 +20,16 @@ themeToggler.onclick = () => {
         document.body.classList.remove("active")
     }
 }
+// code to change theme according to day or night
+let d = new Date()
+let houre = d.getHours()
+if(!(houre>=7 && houre<=18)){          //excluding day time
+    themeToggler.classList.remove("fa-moon")
+    themeToggler.classList.add("fa-sun")
+    document.body.classList.add("active")
+}
 
+// closing the sideBar(navBar) when user click on nav Menu. This code works for only small devices like cellPhone or tablet etc. 
 let allAncherTag = document.querySelectorAll(".navbar a")
 allAncherTag.forEach(function(elem){
     elem.addEventListener("click",function(){
