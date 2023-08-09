@@ -170,6 +170,17 @@ section {
 
 .hero-container .hero-image img {
     height: 36rem;
+    animation: img-animation 2.6s linear 0s infinite alternate;
+}
+
+@keyframes img-animation {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-6%);
+    }
 }
 
 .hero-container .content h3 {
