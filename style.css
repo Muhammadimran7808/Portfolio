@@ -68,6 +68,7 @@ body.active {
     height: 18rem;
     width: 18rem;
     box-shadow: var(--box-shadow);
+    user-select: none;
 }
 
 .header .user h3 {
@@ -169,7 +170,8 @@ section {
 }
 
 .hero-container .hero-image img {
-    height: 36rem;
+    height: 34rem;
+    user-select: none;
     animation: img-animation 2.6s linear 0s infinite alternate;
 }
 
@@ -183,20 +185,36 @@ section {
     }
 }
 
-.hero-container .content h3 {
-    font-size: 4.6rem;
-    line-height: 1.1;
+.hero-container .content h4{
+    font-size: 1.9rem;
+    text-align: left;
     color: var(--black);
-    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: .1rem;
+}
+.hero-container .content h3 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--black);
+    word-spacing: .4rem;
+    /* text-transform: uppercase; */
 }
 
 .hero-container .content p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.1;
-    color: var(--green);
+    font-weight: 700;
+    text-align: left;
+    color: var(--black);
     padding-bottom: .5rem;
     margin-top: 2rem;
-    text-transform: uppercase;
+    word-spacing: .4rem;
+    text-transform:none;
+}
+
+.hero-container .content span{
+    color: var(--green);
 }
 
 .btn {
@@ -221,6 +239,7 @@ section {
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 1rem;
+    user-select: none
 
 }
 
@@ -448,6 +467,7 @@ section {
     width: 100%;
     object-fit: cover;
     image-rendering: optimizeSpeed;
+    user-select: none;
 }
 
 .portfolio .box-container .box .content {
