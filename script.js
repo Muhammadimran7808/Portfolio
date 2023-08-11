@@ -50,7 +50,7 @@ allAncherTag.forEach(function(elem){
 
 // Typing effect
 let typed = new Typed('.typing', {
-    strings: ["Web Developer", "Designer", "Blogger","Freelancer"],
+    strings: ["Web Developer","Python Developer", "Designer", "Blogger","Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     backDelay: 1000,
