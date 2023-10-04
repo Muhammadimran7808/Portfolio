@@ -507,7 +507,7 @@ section {
 }
 .projects .box-container .box .content a i{
     font-size: 40px;
-    color: #fff;
+    color: var(--black);
 }
 .projects .box-container .box .content a i:hover{
     color: var(--green);
