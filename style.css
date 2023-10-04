@@ -446,14 +446,14 @@ section {
 
 /* services section ends */
 
-/* Portfolio section starts */
-.portfolio .box-container {
+/* projects section starts */
+.projects .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
     gap: 2rem;
 }
 
-.portfolio .box-container .box {
+.projects .box-container .box {
     height: 25rem;
     border-radius: .5rem;
     overflow: hidden;
@@ -462,7 +462,7 @@ section {
     border: 1rem solid transparent;
 }
 
-.portfolio .box-container .box img {
+.projects .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -470,7 +470,7 @@ section {
     user-select: none;
 }
 
-.portfolio .box-container .box .content {
+.projects .box-container .box .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -482,11 +482,11 @@ section {
     scale: 0;
 }
 
-.portfolio .box-container .box:hover .content {
+.projects .box-container .box:hover .content {
     scale: 1;
 }
 
-.portfolio .box-container .box .content h3 {
+.projects .box-container .box .content h3 {
     font-size: 2.5rem;
     color: var(--black);
     text-transform: uppercase;
@@ -495,12 +495,27 @@ section {
     transition-delay: .3s;
 }
 
-.portfolio .box-container .box:hover .content h3 {
+.projects .box-container .box:hover .content h3 {
     transform: translateY(0rem);
     opacity: 1;
 }
 
-/* Portfolio section ends */
+.content a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.content a i{
+    font-size: 40px;
+    color: #fff;
+}
+.content a i:hover{
+    color: var(--green);
+}
+
+
+/* projects section ends */
 
 /* contact us section starts */
 .contact form {
@@ -626,7 +641,7 @@ section {
         white-space: nowrap;
     }
 
-    .portfolio .box-container .box {
+    .projects .box-container .box {
         height: 32rem;
     }
 

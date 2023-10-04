@@ -23,7 +23,7 @@ themeToggler.onclick = () => {
 // code to change theme according to day or night
 let d = new Date()
 let houre = d.getHours()
-if(!(houre>=7 && houre<=18)){          //excluding day time
+if(!(houre>=7 && houre<=17)){          //excluding day time
     themeToggler.classList.remove("fa-moon")
     themeToggler.classList.add("fa-sun")
     document.body.classList.add("active")
