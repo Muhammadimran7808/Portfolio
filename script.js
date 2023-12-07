@@ -1,21 +1,23 @@
 
 let menu = document.querySelector("#menu-btn");
 let header = document.querySelector(".header");
+let abc = document.querySelector(".abc");
 menu.onclick = () => {
     menu.classList.toggle("fa-times");
     header.classList.toggle("active");
+    abc.classList.toggle("active")
 }
-  
+
 // Code for manually change theme
 let themeToggler = document.querySelector("#theme-toggler");
 themeToggler.onclick = () => {
     themeToggler.classList.toggle("fa-sun");
-    
+
     if (themeToggler.classList.contains("fa-sun")) {
         themeToggler.classList.remove("fa-moon")
         document.body.classList.add("active")
     }
-    else{
+    else {
         themeToggler.classList.add("fa-moon")
         document.body.classList.remove("active")
     }
@@ -23,7 +25,7 @@ themeToggler.onclick = () => {
 // code to change theme according to day or night
 let d = new Date()
 let houre = d.getHours()
-if(!(houre>=7 && houre<=17)){          //excluding day time
+if (!(houre >= 7 && houre <= 17)) {          //excluding day time
     themeToggler.classList.remove("fa-moon")
     themeToggler.classList.add("fa-sun")
     document.body.classList.add("active")
@@ -31,26 +33,27 @@ if(!(houre>=7 && houre<=17)){          //excluding day time
 
 // closing the sideBar(navBar) when user click on nav Menu. This code works for only small devices like cellPhone or tablet etc. 
 let allAncherTag = document.querySelectorAll(".navbar a")
-allAncherTag.forEach(function(elem){
-    elem.addEventListener("click",function(){
+allAncherTag.forEach(function (elem) {
+    elem.addEventListener("click", function () {
 
         function myFunction(x) {
             if (x.matches) { // If media query matches
-                    header.classList.toggle("active");
-                    menu.classList.toggle("fa-times");
+                header.classList.toggle("active");
+                menu.classList.toggle("fa-times");
+                abc.classList.toggle("active")
             }
-          }
-          var x = window.matchMedia("(max-width: 991px)")
-          myFunction(x) // Call listener function at run time
-          x.addEventListener('change',myFunction) // Attach listener function on state changes
+        }
+        var x = window.matchMedia("(max-width: 991px)")
+        myFunction(x) // Call listener function at run time
+        x.addEventListener('change', myFunction) // Attach listener function on state changes
     })
 })
-  
+
 
 
 // Typing effect
 let typed = new Typed('.typing', {
-    strings: ["Web Developer","Python Developer", "Designer", "Blogger","Freelancer"],
+    strings: ["Web Developer", "Python Developer", "Designer", "Blogger", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     backDelay: 1000,

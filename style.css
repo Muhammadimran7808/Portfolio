@@ -56,7 +56,7 @@ body.active {
     background: var(--bg-color);
     width: 30rem;
     border-right: var(--border);
-    height: 100%;
+    height: 100vh;
     padding: 2rem;
     text-align: center;
 }
@@ -148,17 +148,19 @@ body.active {
 
 /* Home section starts */
 section {
-    min-height: 100vh;
     padding: 2rem;
+    margin-bottom: 10rem;
 }
 
 .home {
     display: flex;
     flex-flow: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     text-align: center;
+    gap: 5rem;
     background: var(--hero-sec-bg-color);
+    /* background-color: #27ae60; */
 }
 
 .hero-container {
@@ -171,6 +173,7 @@ section {
 
 .hero-container .hero-image img {
     height: 34rem;
+    width: auto;
     user-select: none;
     animation: img-animation 2.6s linear 0s infinite alternate;
 }
@@ -674,5 +677,18 @@ section {
 
     .about {
         margin-top: 5rem;
+    }
+}
+
+@media (min-height :1300px) {
+    .header{
+        width: 50vw;
+    }
+    .abc.active{
+        position: fixed;
+        z-index: 900;
+        background-color: rgba(128, 128, 128, 0.466);
+        width: 100vw;
+        height: 100vh;
     }
 }
